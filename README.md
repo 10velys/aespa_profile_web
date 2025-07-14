@@ -12,6 +12,7 @@ A visually engaging, interactive fan website for the K-Pop group **æspa**, buil
 
 ## 📁 File Structure
 ├── ae-members.html # Detail of æspa's virtual avatars (ae-members)
+
 ├── ae-members2.css # Styling for ae-members.html
 ├── albums.html # æspa's discography and awards
 ├── albums.js # Interactive section slider for albums
