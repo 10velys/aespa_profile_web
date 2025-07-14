@@ -1,0 +1,313 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  padding: 10px;
+  color: white;
+  background-color: #1f121c;
+  text-align: center;
+  font-weight: bold;
+}
+
+header.navbar-container {
+  width: 100%;
+  max-width: 1200px;
+  padding-block: 1rem;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 9999;
+}
+
+header.navbar-container .logo img {
+  width: 180px;
+  margin-top: 5px;
+}
+
+header.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+header.navbar-container .nav-list li a {
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #1f121c;
+  transition: all 0.2s ease-in-out;
+}
+header.navbar-container .nav-list li:hover a {
+  background-color: #1f121c;
+  color: #f0dcff;
+}
+header.navbar-container .nav-list li.active-page:hover a {
+    background-color: #1f121c;
+    color: #f0dcff;
+    text-decoration: underline !important;
+  }
+  
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: center;
+}
+
+main .content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+main .content .content-description {
+  flex: 1 1;
+}
+main .content .content-description .title {
+  margin-block: 1rem;
+  font-size: 3.5rem;
+}
+main .content .content-description p {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+main .content .content-description button {
+  padding: 0.8rem 2.5rem;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  margin-block-start: 1rem;
+  background-color: #1f121c;
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+main .content .content-description button:hover {
+  border: 3px solid #1f121c;
+  background-color: transparent;
+  color: #1f121c;
+}
+main .content .content-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+main .content .content-image img {
+  width: 70%;
+  min-width: 250px;
+}
+
+main aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-end: 0;
+}
+main aside .social-media {
+  height: 100%;
+  display: flex;
+}
+main aside .social-media ul {
+  padding: 1.5rem 1rem;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  margin: auto;
+  background-color: #1f121c;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+main aside .social-media li {
+  list-style-type: none;
+}
+
+main aside .social-media li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fffaff;
+  transition: all 0.1s ease-in-out;
+}
+main aside .social-media li a:hover {
+  color: #f0dcff;
+}
+
+main .content .content-description .button-ll a {
+  text-decoration: none; 
+  color: white; 
+  transition: all 0.15s ease-in; 
+}
+
+main .content .content-description .button-ll:hover a {
+  color: #1f121c; 
+}
+
+/* Styling untuk dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1f121c;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 8px;
+  z-index: 1;
+  margin-top: 10px; /* Meningkatkan jarak dari tombol dropdown */
+  top: 100%;
+  left: 0;
+  padding: 8px 0; /* Menambahkan padding atas dan bawah pada konten dropdown */
+}
+
+.dropdown-content a {
+  color: #1f121c;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border-radius: 0 !important;
+  margin: 4px 0; /* Menambahkan margin antara item menu */
+}
+
+.dropdown-content a:hover {
+  background-color: #f0dcff !important;
+  color: #1f121c !important;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Menambahkan icon dropdown yang lebih jelas */
+.dropbtn::after {
+  font-size: 0.7em;
+  vertical-align: middle;
+  margin-left: 5px; /* Menambahkan sedikit ruang setelah teks */
+}
+
+.active-page a {
+    text-decoration: underline !important;
+    text-underline-offset: 5px; /* Memberikan jarak antara text dan underline */
+    text-decoration-thickness: 2px; /* Ketebalan garis underline */
+    font-weight: 600; /* Sedikit lebih tebal dari biasanya */
+  }
+
+/* Responsivitas untuk layar tablet dan mobile */
+@media screen and (max-width: 992px) {
+  header.navbar-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  header.navbar-container .logo {
+    margin-bottom: 1rem;
+  }
+  
+  main {
+    padding: 1rem 2rem;
+  }
+  
+  main .content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  main .content .content-description .title {
+    font-size: 2.5rem;
+  }
+  
+  main .content .content-image img {
+    margin-top: 2rem;
+    width: 80%;
+    max-width: 300px;
+  }
+}
+
+/* Responsivitas untuk smartphone */
+@media screen and (max-width: 768px) {
+  header.navbar-container .nav-list ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  
+  main aside {
+    position: static;
+    margin-top: 2rem;
+  }
+  
+  main aside .social-media ul {
+    flex-direction: row;
+    border-radius: 12px;
+    padding: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  main aside .social-media li {
+    margin: 0 0.5rem;
+  }
+  
+  main {
+    flex-direction: column;
+  }
+  
+  /* Responsivitas untuk dropdown di mobile */
+  .dropdown-content {
+    position: static;
+    width: 100%;
+    margin-top: 0.5rem;
+    box-shadow: none;
+    background-color: rgba(240, 220, 255, 0.1);
+    margin-top: 0.3rem;
+  }
+  
+  .dropdown {
+    width: 100%;
+  }
+  
+  .dropdown-content a {
+    padding-left: 2rem;
+  }
+}
+
+/* Untuk smartphone kecil */
+@media screen and (max-width: 480px) {
+  main .content .content-description .title {
+    font-size: 2rem;
+  }
+  
+  main .content .content-description h2 {
+    font-size: 1.2rem;
+  }
+  
+  main .content .content-description p {
+    font-size: 1rem;
+  }
+}

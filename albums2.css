@@ -1,0 +1,360 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    background-color: #f0e6ff;
+    color: #333;
+    line-height: 1.6;
+  }
+   
+  h2 {
+    color: #1f121c;
+    text-align: center;
+    font-size: 30px;
+  }
+   
+  h3 {
+    color: #4a1164;
+    font-size: 22px;
+    border-bottom: 2px solid #9054a8;
+    padding-bottom: 8px;
+    font-weight: 700;
+  }
+  
+  footer {
+    padding: 10px;
+    color: white;
+    background-color: #1f121c;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  nav {
+    background: #1f121c;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    width: 100%;
+  }
+  
+  nav ul {
+    padding-inline: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  
+  nav li {
+    list-style-type: none;
+    transition: transform 0.2s;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  nav li:hover {
+    transform: translateY(-3px);
+  }
+  
+  nav a {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    display: block;
+  }
+  
+  nav a:hover {
+    font-weight: bold;
+    color: #fff;
+    background-color: rgb(58, 28, 73);
+    box-shadow: 0 0 10px rgba(48, 25, 71, 0.7);
+  }
+  
+  .profile header {
+    text-align: center;
+  }
+  
+  .featured-image {
+    width: 50%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+    transition: transform 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .featured-image:hover {
+    transform: scale(1.02);
+  }
+  
+  .aespa-logo {
+    width: 40%;
+    max-height: 200px;
+    object-fit: contain;
+    object-position: center;
+    filter: drop-shadow(0 0 15px rgba(145, 63, 226, 0.7));
+    animation: pulsate 2s infinite alternate;
+  }
+  
+  @keyframes pulsate {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.05);
+    }
+  }
+  
+  .img-aside {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+  }
+  
+  .profile img {
+    width: 150px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .profile img:hover {
+    transform: scale(1.05);
+  }
+  
+  .card {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 25px;
+    text-align: justify;
+    background-color: #ffffff;
+    margin-bottom: 25px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-top: 5px solid #1f121c;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(74, 17, 100, 0.2);
+  }
+  
+  #content section {
+    background-color: #f6f0ff;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+    text-align: center;
+  }
+  
+  #content section:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Color-coded sections for different releases */
+  #content section:nth-child(1) {
+    border-left: 5px solid #000000; /* Black Mamba */
+  }
+  
+  #content section:nth-child(2) {
+    border-left: 5px solid #c0c0c0; /* Forever */
+  }
+  
+  #content section:nth-child(3) {
+    border-left: 5px solid #4285f4; /* Next Level */
+  }
+  
+  #content section:nth-child(4) {
+    border-left: 5px solid #ff4081; /* Savage */
+  }
+  
+  #content section:nth-child(5) {
+    border-left: 5px solid #ffd700; /* Dreams Come True */
+  }
+  
+  #content section:nth-child(6) {
+    border-left: 5px solid #6a0dad; /* Illusion */
+  }
+  
+  #content section:nth-child(7) {
+    border-left: 5px solid #87ceeb; /* Life's Too Short */
+  }
+  
+  #content section:nth-child(8) {
+    border-left: 5px solid #bc8f8f; /* Girls */
+  }
+  
+  #content section:nth-child(9) {
+    border-left: 5px solid #ff0000; /* Beautiful Christmas */
+  }
+  
+  #content section:nth-child(10) {
+    border-left: 5px solid #008000; /* Hold On Tight */
+  }
+  
+  #content section:nth-child(11) {
+    border-left: 5px solid #ff69b4; /* Welcome To MY World */
+  }
+  
+  #content section:nth-child(12) {
+    border-left: 5px solid #00bfff; /* MY WORLD */
+  }
+  
+  #content section:nth-child(13) {
+    border-left: 5px solid #ffa500; /* Better Things */
+  }
+  
+  #content section:nth-child(14) {
+    border-left: 5px solid #8e44ad; /* Drama */
+  }
+  
+  #content section:nth-child(15) {
+    border-left: 5px solid #7d29cb; /* Supernova */
+  }
+  
+  #content section:nth-child(16) {
+    border-left: 5px solid #c00040; /* Armageddon */
+  }
+  
+  #content section:nth-child(17) {
+    border-left: 5px solid #32cd32; /* Whiplash */
+  }
+  
+  .jumbotron {
+    font-size: 22px;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #13090f, #341e2f, #4a1164, #6e30a3);
+    text-align: center;
+    color: white;
+    background-size: 300% 300%;
+    animation: gradient-shift 10s ease infinite;
+  }
+  
+  @keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .jumbotron p {
+    margin: 10px 0;
+    font-size: 24px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  main {
+    padding: 30px;
+    display: flex;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  #content {
+    flex: 2.5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+  }
+  
+  aside {
+    flex: 1;
+  }
+  
+  aside .card {
+    background-color: #f6f0ff;
+  }
+  
+  aside figure {
+    margin: 15px 0;
+    text-align: center;
+  }
+  
+  aside figcaption {
+    font-style: italic;
+    color: #4a1164;
+    margin: 5px 0;
+  }
+  
+  aside img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  header {
+    display: inline;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    #content, aside {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* For devices with screen width of 1200px and below */
+  @media screen and (max-width: 1200px) {
+    main {
+      flex-flow: column nowrap;
+    }
+    main aside {
+      align-self: center;
+    }
+  }
+  
+  /* For devices with screen width of 768px and below */
+  @media screen and (max-width: 768px) {
+    nav ul {
+      justify-content: center;
+      padding-inline: 0.5rem;
+      gap: 0.5rem; 
+      flex-direction: column; 
+      align-items: center;
+    }
+    nav li {
+      width: 100%; 
+      text-align: center;
+    }
+    nav a {
+      font-size: 16px; 
+      padding: 8px 10px;
+    }
+    main aside {
+      align-self: stretch;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    nav {
+      padding: 10px;
+    }
+    
+    nav a {
+      font-size: 14px; 
+      padding: 6px 8px;
+    }
+  }
