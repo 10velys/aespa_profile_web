@@ -1,4 +1,5 @@
 # æspa Zone - Fan Web Experience 🌟
+![Uploading ae-group.jpg…]()
 
 A visually engaging, interactive fan website for the K-Pop group **æspa**, built using HTML, CSS, and vanilla JavaScript. This project is a tribute to æspa's concept universe — including their avatars, discography, members, and more.
 
@@ -12,17 +13,29 @@ A visually engaging, interactive fan website for the K-Pop group **æspa**, buil
 
 ## 📁 File Structure
 ├── ae-members.html # Detail of æspa's virtual avatars (ae-members)
+
 ├── ae-members2.css # Styling for ae-members.html
+
 ├── albums.html # æspa's discography and awards
+
 ├── albums.js # Interactive section slider for albums
+
 ├── albums2.css # Styling for albums.html
+
 ├── Beranda.html # About æspa, member profiles, and fandom
+
 ├── Beranda2.css # Styling for Beranda.html
+
 ├── index.html # Styling ideas for formal events (side content)
+
 ├── index.js # Carousel and hero-banner logic (for index.html)
+
 ├── landingpage2.html # Landing page/homepage
+
 ├── landingpage2.css # Styling for landing page
+
 ├── style.css # Styling for index.html
+
 └── /image # Folder with all image assets
 
 ## ✨ Features
